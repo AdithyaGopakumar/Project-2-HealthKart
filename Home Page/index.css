@@ -7,6 +7,10 @@ html {
   font-size: 62.5%;
 }
 
+.section-body {
+  position: relative;
+}
+
 /* ************************************ */
 /* Header Section */
 /* ************************************ */
@@ -40,6 +44,7 @@ html {
   width: 3.6rem;
   border-right: none;
   font-size: 1.6rem !important;
+  background-color: #fff !important;
 }
 .search-btn:hover {
   color: #02b4b2 !important;
@@ -86,6 +91,13 @@ html {
 }
 .btn-find {
   background-color: #fdf1f3;
+}
+.dark-mode-btn {
+  border: none;
+  background-color: #fff;
+}
+.bulb-img {
+  height: 2.4rem;
 }
 /* ************************************ */
 /* Main Section */
@@ -138,6 +150,7 @@ html {
   padding: 1.6rem;
   border-radius: 9px;
   position: relative;
+  background-color: #fff;
 }
 .item {
   transition: all 0.25s;
@@ -442,4 +455,76 @@ html {
 .download-text {
   font-size: 1.4rem;
   font-weight: 600;
+}
+/* ################################################ */
+/* ################### Dark Mode ################## */
+/* ################################################ */
+.dark {
+  background-color: #555;
+  color: #fff;
+}
+.footer-dark {
+  background-color: #333;
+}
+.links-dark:link,
+.links-dark:visited {
+  color: #fff;
+}
+.links-dark:hover,
+.links-dark:active {
+  color: #02b4b2;
+}
+.item-dark {
+  color: #333;
+}
+.extras-dark {
+  background-color: #c3c3c3;
+}
+.contact-heading-dark {
+  color: #fff;
+}
+.dark-mode-btn-dark {
+  background-color: #555;
+}
+/* ################################################ */
+/* ################### Coupon ################## */
+/* ################################################ */
+.coupon-container {
+  width: 60%;
+  margin: 8% 20%;
+  background-color: lightblue;
+  position: absolute;
+  z-index: 9999;
+  visibility: hidden;
+}
+.coupon-inner {
+  position: relative;
+}
+.coupon-img {
+  width: 100%;
+}
+.coupon-close {
+  border-radius: 9px;
+  padding: 0;
+  border: none;
+  font-size: 3.6rem;
+  padding: 0 1.2rem;
+  position: absolute;
+  right: 1px;
+  /* top: 10px; */
+  background-color: rgba(0, 0, 0, 0);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: blue; */
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.hidden {
+  display: none;
 }

@@ -1,0 +1,26 @@
+[
+  {
+    "brand": "MuscleBlaze",
+    "brand_id": 1
+  },
+  {
+    "brand": "Optimum Nutrition",
+    "brand_id": 2
+  },
+  {
+    "brand": "MuscleTech",
+    "brand_id": 6
+  },
+  {
+    "brand": "Labrada",
+    "brand_id": 7
+  },
+  {
+    "brand": "GNC",
+    "brand_id": 8
+  },
+  {
+    "brand": "Other",
+    "brand_id": 9
+  }
+]
