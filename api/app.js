@@ -5,23 +5,25 @@ dotenv.config();
 let port = 9800;
 let mongo = require("mongodb");
 let MongoClient = mongo.MongoClient;
+let cors = require("cors");
 let mongoUrl = "mongodb://localhost:27017";
 // live mongo
 // let mongoUrl =
-//   "mongodb+srv://test:test123@cluster0.5vhbwle.mongodb.net/?retryWrites=true&w=majority";
+// "mongodb+srv://test:test123@cluster0.5vhbwle.mongodb.net/?retryWrites=true&w=majority";
 let bodyParser = require("body-parser");
 let db;
 
 // middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 
 // connection with database
 MongoClient.connect(mongoUrl, (err, client) => {
   if (err) console.log("Error while connecting");
   db = client.db("healthkart");
   // live mongo
-  // db = client.db("Healthkart_Project");
+  // db = client.db("healthKart");
   app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
   });
